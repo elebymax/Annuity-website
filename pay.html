@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel=stylesheet type="text/css" href="css/pay.css">
+    <script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
+</head>
+<body>
+    <div id="div_header">
+        <div id="head_title">
+            <img src="res/image/logo_1.png" id="head_logo" onclick="document.location.href='index.html';">
+        </div>
+        <div id="head_btn_div">
+            <div class="head_btn">
+                <img onclick="changeOption(0);" src="res/image/button_disability.png">
+            </div>
+            <div class="head_btn">
+                <img onclick="changeOption(1);" src="res/image/button_birth.png" >
+            </div>
+            <div class="head_btn">
+                <img onclick="changeOption(2);" src="res/image/button_old.png" >
+            </div>
+            <div class="head_btn">
+                <img onclick="changeOption(3);" src="res/image/button_death.png" >
+            </div>
+        </div>
+        <div id="head_option_div">
+            <div class="option_btn" id="option_btn_left">
+                <img src="res/image/toLeft.png">
+            </div>
+            <div id="head_option">
+                <div id="pay_option">
+                    <div class="option_frame"><img src="res/image/disability.png"></div>
+                    <div class="option_frame"><img src="res/image/birth.png"></div>
+                    <div class="option_frame"><img src="res/image/old.png"></div>
+                    <div class="option_frame"><img src="res/image/death.png"></div>
+                </div>
+            </div>
+            <div class="option_btn" id="option_btn_right">
+                <img src="res/image/toRight.png">
+            </div>
+        </div>
+        <div id="head_name_div">
+            <div id="head_name">
+                <div id="pay_name">
+                    <div class="name_frame"><img src="res/image/name_disability.png"></div>
+                    <div class="name_frame"><img src="res/image/name_birth.png"></div>
+                    <div class="name_frame"><img src="res/image/name_old.png"></div>
+                    <div class="name_frame"><img src="res/image/name_death.png"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="div_question">
+        <iframe id="frame_question" src="" frameborder="0"></iframe>
+    </div>
+
+    <div id="div_footer">
+        <div id="footer_title">本網站資訊由勞動部勞工保險局提供</div>
+        <div id="footer_img"><a target="_blank" href="http://www.bli.gov.tw/sub.aspx?a=DUbMXxAoFv4%3D"><img src="res/image/logo_2.png"></a></div>
+        <p>Icon made by Freepik from <a target="_blank" href="http://www.flaticon.com/">www.flaticon.com</a></p>
+    </div>
+
+    <script src="js/pay.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel=stylesheet type="text/css" href="css/question_death.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+</head>
+<body onload="frameResize();">
+    <div id="div_question">
+
+        <div class="quest_option">
+            <div class="option_bar" onclick="change('#btn_death_1');">
+                <div class="option_bar_box">
+                    <img class="option_btn_add" id="btn_death_1" src="res/image/add.png">
+                    <div class="option_title_div">
+                        <h2 class="option_title">喪葬給付請領資格</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="option_box" id="death_1_box">
+                <h1 class="box_title">請領資格</h1>
+                <hr size="4" width="80%" color="#4DD0F9">
+                <ul id="death_1_ul_1">
+                    <li>被保險人於國保加保期間死亡(未滿65歲)。</li>
+                    <li>由支出殯葬費用者領取。</li>
+                    <li>非家屬也可申請，自得請領之日起，5年請求權時效只要有實際支出殯葬費者即可申請。申請人須檢附家屬出具說明，表達已知悉喪葬給付領取金額。</li>
+                </ul>
+                <img src="res/image/death/death_1_1.png">
+                <div id="death_1_content">※喪葬給付係按被保險人死亡當月的月投保金額一次發給5個月。</br>※國民年金保險月投保金額，自104年1月1日起，由17,280元調整為18,282元。</div>
+                <h1 class="box_title">喪葬給付一律發給<div class="letter_red">5個月月投保金額</div></h1>
+                <hr size="4" width="80%" color="#4DD0F9">
+                <ul id="death_1_ul_2">
+                    <li>支出殯葬費用證明文件應為正本，登載金額應為「實際支出殯葬費用之金額」，與喪葬給付金額無關。</li>
+                    <li>不論實際支出費用多少，通過審核者一律發給5個月月投保金額的喪葬給付！(104年1月1日起為<div class="letter_red">91,410元</div>)。</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="quest_option">
+            <div class="option_bar" onclick="change('#btn_death_2');">
+                <div class="option_bar_box">
+                    <img class="option_btn_add" id="btn_death_2" src="res/image/add.png">
+                    <div class="option_title_div">
+                        <h2 class="option_title">遺屬年金條件</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="option_box" id="death_2_box">
+                <h1 class="box_title">遺屬年金條件</h1>
+                <hr size="4" width="80%" color="#4DD0F9">
+                <img src="res/image/death/death_2_1.png">
+            </div>
+        </div>
+
+        <div class="quest_option">
+            <div class="option_bar" onclick="change('#btn_death_3');">
+                <div class="option_bar_box">
+                    <img class="option_btn_add" id="btn_death_3" src="res/image/add.png">
+                    <div class="option_title_div">
+                        <h2 class="option_title">遺屬年金順位</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="option_box" id="death_3_box">
+                <h1 class="box_title">遺屬順位</h1>
+                <hr size="4" width="80%" color="#4DD0F9">
+                <div id="death_3_content">1.配偶子女>2.父母>3.祖父母>4.孫子女>5.兄弟姊妹</div>
+                <ul id="death_3_ul">
+                    <li>各順位遺屬分別有資格限制。</li>
+                    <li>當序受領遺屬存在時，後順位遺屬不得請領。</li>
+                    <li>當序遺屬請領後死亡或喪失請領條件，後順位遺屬亦不得請領。</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="quest_option">
+            <div class="option_bar" onclick="change('#btn_death_4');">
+                <div class="option_bar_box">
+                    <img class="option_btn_add" id="btn_death_4" src="res/image/add.png">
+                    <div class="option_title_div">
+                        <h2 class="option_title">遺屬年金-加保期間死亡</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="option_box" id="death_4_box">
+                <h1 class="box_title">請領資格</h1>
+                <hr size="4" width="80%" color="#4DD0F9">
+                <ul id="death_4_ul">
+                    <li>被保險人於國保加保期間死亡(未滿65歲)。</li>
+                    <li>由符合請領條件的遺屬請領。</li>
+                </ul>
+                <img src="res/image/death/death_4_1.png">
+                <div id="death_4_content">※105年3月1日起，遺屬年金給付之受益人未於符合請領條件之當月提出申請者，自提出請領之日起前5年得領取之給付，由保險人依法追溯補給之。但已經其他受益人請領之部分，不適用之。</div>
+                <img src="res/image/death/death_4_2.png">
+            </div>
+        </div>
+
+        <div class="quest_option">
+            <div class="option_bar" onclick="change('#btn_death_5');">
+                <div class="option_bar_box">
+                    <img class="option_btn_add" id="btn_death_5" src="res/image/add.png">
+                    <div class="option_title_div">
+                        <h2 class="option_title">遺屬年金-領取年金期間死亡</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="option_box" id="death_5_box">
+                <h1 class="box_title">請領資格</h1>
+                <hr size="4" width="80%" color="#4DD0F9">
+                <ul id="death_5_ul">
+                    <li>被保險人於領取老年年金或身心障礙(基本保證)年金期間死亡。</li>
+                    <li>由符合請領條件的遺屬請領。</li>
+                </ul>
+                <img src="res/image/death/death_5_1.png">
+                <div id="death_5_content">※105年3月1日起，遺屬年金給付之受益人未於符合請領條件之當月提出申請者，自提出請領之日起前5年得領取之給付，由保險人依法追溯補給之。但已經其他受益人請領之部分，不適用之。</div>
+                <img src="res/image/death/death_5_2.png">
+            </div>
+        </div>
+
+        <div class="quest_option">
+            <div class="option_bar" onclick="change('#btn_death_6');">
+                <div class="option_bar_box">
+                    <img class="option_btn_add" id="btn_death_6" src="res/image/add.png">
+                    <div class="option_title_div">
+                        <h2 class="option_title">遺屬年金-未及請領老年年金前死亡</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="option_box" id="death_6_box">
+                <h1 class="box_title">請領資格</h1>
+                <hr size="4" width="80%" color="#4DD0F9">
+                <ul id="death_6_ul">
+                    <li>被保險人於年滿65歲，未及請領老年年金前死亡。</li>
+                    <li>由符合請領條件的遺屬請領。</li>
+                </ul>
+                <img src="res/image/death/death_6_1.png">
+                <div id="death_6_content">※105年3月1日起，遺屬年金給付之受益人未於符合請領條件之當月提出申請者，自提出請領之日起前5年得領取之給付，由保險人依法追溯補給之。但已經其他受益人請領之部分，不適用之。</div>
+                <img src="res/image/death/death_6_2.png">
+            </div>
+        </div>
+
+        <div class="quest_option">
+            <div class="option_bar" onclick="change('#btn_death_7');">
+                <div class="option_bar_box">
+                    <img class="option_btn_add" id="btn_death_7" src="res/image/add.png">
+                    <div class="option_title_div">
+                        <h2 class="option_title">遺屬年金-停發情形</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="option_box" id="death_7_box">
+                <h1 class="box_title">遺屬年金停發情形</h1>
+                <hr size="4" width="80%" color="#4DD0F9">
+                <ul id="death_7_ul">
+                    <li>死亡。</li>
+                    <li>失蹤。</li>
+                    <li>入獄服刑、因案羈押或拘禁。</li>
+                    <li>不符遺屬請領條件。</li>
+                    <li>配偶再婚。</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/question.js"></script>
+    <script src="js/optionBox.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel=stylesheet type="text/css" href="css/qualify.css">
+    <script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+</head>
+<body>
+    <div id="div_header">
+        <div id="head_title">
+            <img src="res/image/logo_1.png" id="head_logo" onclick="document.location.href='index.html';">
+        </div>
+        <div id="head_img">
+            <img src="res/image/qualify.png">
+        </div>
+        <div id="head_name">
+            <h1>納保資格</h1>
+        </div>
+        <div id="head_content">
+            <p>這裡將國民年金的各大規定進行大解析！</p>
+            <p>透過實際案例來了解國民年金，讓自己的權益更有保障不被忽視！</p>
+        </div>
+    </div>
+    <div id="div_resolve">
+
+        <div class="resolve_option">
+            <div class="option_bar" onclick="change('#btn_1')">
+                <div class="option_bar_box">
+                    <img class="option_btn_add" id="btn_1" src="res/image/add.png">
+                    <div class="option_title_div">
+                        <h2 class="option_title">納保資格範圍</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="option_box" id="qualify_1_box">
+                <h1 class="box_title">常見納保對象</h1>
+                <hr size="4" width="80%" color="#4DD0F9">
+                <ul id="qualify_1_ul">
+                    <li>家庭主婦。</li>
+                    <li>待業者。</li>
+                    <li>替代役(保替代役役男一般保險期間)。</li>
+                    <li>學生(25歲以上)。</li>
+                    <li>旅居國外者(國內設有戶籍)。</li>
+                    <li>受刑人。</li>
+                </ul>
+                <div id="qualify_1_content">※民眾在軍、公教、勞、農保的中斷期間<div class="letter_red">均應參加國保</div>，即使當月只有中斷1天，也要納保。</br>※被保險人不需申辦加保、退保。勞保局自動納保、退保。</div>
+            </div>
+        </div>
+
+        <div class="resolve_option">
+            <div class="option_bar" onclick="change('#btn_2')">
+                <div class="option_bar_box">
+                    <img class="option_btn_add" id="btn_2" src="res/image/add.png">
+                    <div class="option_title_div">
+                        <h2 class="option_title">保費</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="option_box" id="qualify_2_box">
+                <h1 class="box_title">保費計算</h1>
+                <hr size="4" width="80%" color="#4DD0F9">
+                <ul id="qualify_2_ul">
+                    <li>保費按日計算(101.1.1起，100年12月31日前的保費仍按月計算)。</li>
+                    <li>保費計收至年滿65歲前一日，65歲後不需再繳費。</li>
+                    <li>每2個月為一期計費開單。</li>
+                </ul>
+                <img src="res/image/qualify/qualify_2_1.png">
+                <div class="qualify_2_content">※100年12月31日前的保費仍按月計算。</div>
+                <h1 class="box_title">保險費負擔比率</h1>
+                <hr size="4" width="80%" color="#4DD0F9">
+                <img src="res/image/qualify/qualify_2_2.png">
+                <div class="qualify_2_content">※全月保費＝18,282 x 8%＝1,463元。</br>※所得未達一定標準：依國民年金法第12條規定，以家庭總收入平均分配全家人口計算請向戶籍所在地縣(市)政府社會局(處)或公所申請資格認定</div>
+            </div>
+        </div>
+
+        <div class="resolve_option">
+            <div class="option_bar" onclick="change('#btn_3')">
+                <div class="option_bar_box">
+                    <img class="option_btn_add" id="btn_3" src="res/image/add.png">
+                    <div class="option_title_div">
+                        <h2 class="option_title">繳款</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="option_box" id="qualify_3_box">
+                <h1 class="box_title">繳款單寄發與繳納</h1>
+                <hr size="4" width="80%" color="#4DD0F9">
+                <img src="res/image/qualify/qualify_3_1.png">
+                <div class="qualify_3_content">※銀行複委託的「農/漁會信用部」也可繳納。</br>※繳款單收件地址不限戶籍地，可申請改寄通訊地址。</div>
+                <div class="qualify_3_content">單月月底寄發 (1.3.5.7.9.11月)。</div>
+                <img src="res/image/qualify/qualify_3_2.png">
+                <h1 class="box_title">轉帳代繳好處多</h1>
+                <hr size="4" width="80%" color="#4DD0F9">
+                <img src="res/image/qualify/qualify_3_3.png">
+                <ul id="qualify_3_ul">
+                    <li>省時省力，出國旅遊不擔心。</li>
+                    <li>繳費定時，不怕遲繳產生利息。</li>
+                    <li>存摺就是繳費證明。</li>
+                    <li>不用再額外付手續費。</li>
+                    <li>不會誤繳別人的保費。</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="resolve_option">
+            <div class="option_bar" onclick="change('#btn_4')">
+                <div class="option_bar_box">
+                    <img class="option_btn_add" id="btn_4" src="res/image/add.png">
+                    <div class="option_title_div">
+                        <h2 class="option_title">好康</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="option_box" id="qualify_4_box">
+                <h1 class="box_title">每繳一次，馬上現賺政府4成補助額</h1>
+                <hr size="4" width="80%" color="#4DD0F9">
+                <ul id="qualify_4_ul">
+                    <li>納保民眾最多自繳6成保其餘4成政府分擔。</li>
+                    <li>不繳費等於白白推掉至少4成補助額。</li>
+                    <li>經濟困難者可申請保費減免，提高政府補助額度。</li>
+                </ul>
+                <div id="qualify_4_content">※以費率8%計，民眾自繳878元/月，政府補助585元/月。</div>
+            </div>
+        </div>
+
+        <div class="resolve_option">
+            <div class="option_bar" onclick="change('#btn_5')">
+                <div class="option_bar_box">
+                    <img class="option_btn_add" id="btn_5" src="res/image/add.png">
+                    <div class="option_title_div">
+                        <h2 class="option_title">無力繳納保費</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="option_box" id="qualify_5_box">
+                <h1 class="box_title">無力繳納保費</h1>
+                <hr size="4" width="80%" color="#4DD0F9">
+                <ul id="qualify_5_ul">
+                    <li><div class="letter_blue">申請保費補助</div>：家庭經濟狀況不佳者，可向戶籍所在地的縣市政府、公所申請「所得未達一定標準」審核通過由政府補助55%～70%保費。不繳費等於白白推掉至少4成補助額經濟困難者可申請保費減免，提高政府補助額度。</li>
+                    <li><div class="letter_blue">10年內補繳</div>：最近10年內保費可分次補繳，欠費期間僅加計小額利息(105年利率1.2%)。</li>
+                    <li><div class="letter_blue">分期繳納</div>：「欠費總額達3,000元以上」且公告年度個人綜合所得總額合計50萬元以下者，可向勞保局申請分期。</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="resolve_option">
+            <div class="option_bar" onclick="change('#btn_6')">
+                <div class="option_bar_box">
+                    <img class="option_btn_add" id="btn_6" src="res/image/add.png">
+                    <div class="option_title_div">
+                        <h2 class="option_title">利息怎麼算?</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="option_box" id="qualify_6_box">
+                <h1 class="box_title">利息計算方法</h1>
+                <hr size="4" width="80%" color="#4DD0F9">
+                <img src="res/image/qualify/qualify_6_1.png">
+            </div>
+        </div>
+
+        <div class="resolve_option">
+            <div class="option_bar" onclick="change('#btn_7')">
+                <div class="option_bar_box">
+                    <img class="option_btn_add" id="btn_7" src="res/image/add.png">
+                    <div class="option_title_div">
+                        <h2 class="option_title">案例解析</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="option_box" id="qualify_7_box">
+                <h1 class="box_title">還不到65歲就死亡，之前繳的國保不就白繳了？</h1>
+                <hr size="4" width="80%" color="#4DD0F9">
+                <div class="qualify_7_content"><div class="letter_blue_large">答</div>： 被保險人在加保期間，如果未達領取老年年金的年齡即死亡，實際為其支出殯葬費用的人，可以領取喪葬給付，有符合條件的遺屬，還可以領取遺屬年金給付。</div>
+                <h1 class="box_title">轉帳代繳為何不能直接到勞保局辦？</h1>
+                <hr size="4" width="80%" color="#4DD0F9">
+                <div class="qualify_7_content"><div class="letter_blue_large">答</div>： 扣款銀行才有您的帳戶資料，勞保局無法核對您在約定書上的帳號及印章是否正確。您到勞保局辦理，勞保局還是要把您的約定書轉寄至所屬銀行、郵局，所需時間更久。</div>
+                <h1 class="box_title">已有長期穩定工作(參加勞、公教保)，以前繳的國保還有用嗎？</h1>
+                <hr size="4" width="80%" color="#4DD0F9">
+                <div class="qualify_7_content"><div class="letter_blue_large">答</div>： 不論國保年資累計多少，65歲時是否仍在加保中，曾有的國保年資，65歲時均可請領國保的老年年金。</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="div_footer">
+        <div id="footer_title">本網站資訊由勞動部勞工保險局提供</div>
+        <div id="footer_img"><a target="_blank" href="http://www.bli.gov.tw/sub.aspx?a=DUbMXxAoFv4%3D"><img src="res/image/logo_2.png"></a></div>
+        <p>Icon made by Freepik from <a target="_blank" href="http://www.flaticon.com/">www.flaticon.com</a></p>
+    </div>
+
+    <script src="js/qualify.js"></script>
+    <script src="js/optionBox.js"></script>
+</body>
+</html>

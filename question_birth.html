@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>生育年金</title>
+    <link rel=stylesheet type="text/css" href="css/question_birth.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+</head>
+<body onload="frameResize();">
+    <div id="div_question">
+
+        <div class="quest_option">
+            <div class="option_bar" onclick="change('#btn_birth_1')">
+                <div class="option_bar_box">
+                    <img class="option_btn_add" id="btn_birth_1" src="res/image/add.png">
+                    <div class="option_title_div">
+                        <h2 class="option_title">生育給付請領資格</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="option_box" id="birth_1_box">
+                <h1 class="box_title">請領資格</h1>
+                <hr size="4" width="80%" color="#4DD0F9">
+                <ul id="birth_1_ul">
+                    <li>被保險人於國保加保期間<div class="letter_red">分娩</div>或<div class="letter_red">早產</div>。</li>
+                    <li>同時符合勞保、農保(配偶)生育給付條件者，僅得則一請領。</li>
+                </ul>
+                <div id="birth_1_content">※生育給付係按被保險人生產當月的月投保金額一次發給2個月生育給付</br>(若被保險人於104年12月17日以前分娩或早產，依當時適用之法律，生育給付為1個月)。</div>
+            </div>
+        </div>
+
+        <div class="quest_option">
+            <div class="option_bar" onclick="change('#btn_birth_2')">
+                <div class="option_bar_box">
+                    <img class="option_btn_add" id="btn_birth_2" src="res/image/add.png">
+                    <div class="option_title_div">
+                        <h2 class="option_title">生育給付金額</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="option_box" id="birth_2_box">
+                <h1 class="box_title">生育給付金額</h1>
+                <hr size="4" width="80%" color="#4DD0F9">
+                <img src="res/image/birth/birth_formula.png">
+                <div id="birth_2_content">※生育給付係按被保險人生產當月的月投保金額一次發給2個月生育給付</br>(若被保險人於104年12月17日以前分娩或早產，依當時適用之法律，生育給付為1個月)。</div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/question.js"></script>
+    <script src="js/optionBox.js"></script>
+</body>
+</html>

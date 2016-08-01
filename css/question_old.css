@@ -1,0 +1,175 @@
+
+body {
+    margin: 0;
+    font-family: "Microsoft JhengHei";
+}
+
+.elm {
+    /*Firefox*/
+    -moz-calc(expression);
+    /*chrome safari*/
+    -webkit-calc(expression);
+    /*Standard */
+    calc();
+}
+
+/* DIV QUESTION*/
+
+#div_question {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    width: 100%;
+}
+
+.quest_option {
+    padding-top: 50px;
+    text-align: center;
+    list-style: none;
+    width: 900px;
+    margin-left: calc(50% - 450px);
+    overflow: inherit;
+}
+
+.option_bar {
+    height: 100px;
+}
+
+.option_btn_add {
+    padding-top: 10px;
+    padding-left: 10px;
+    float: left;
+}
+
+.option_title_div {
+    margin: 0;
+    width: 808px;
+    text-align: center;
+    float: left;
+}
+
+.option_title {
+    margin: 0;
+    font-size: 40px;
+    line-height: 100px;
+    letter-spacing: 10px;
+}
+
+.option_bar_box {
+    height: 100px;
+    width: 900px;
+    border: 4px #999898 solid;
+    border-radius: 20px;
+}
+
+.option_box {
+    margin-top: 30px;
+    height: 300px;
+    width: 900px;
+    border: 4px #4DD0F9 solid;
+    border-radius: 20px;
+}
+
+.box_title {
+    text-align: left;
+    letter-spacing: 10px;
+    padding-left: 100px;
+    font-size: 40px;
+    line-height: 50px;
+    width: 700px;
+}
+
+.letter_red {
+    color: red;
+    display: inline-block;
+}
+
+.letter_blue {
+    color: #3D9CEB;
+    display: inline-block;
+}
+
+/*          BOX 1          */
+
+#old_1_box {
+    height: 470px;
+}
+
+#old_1_ul {
+    text-align: left;
+    font-size: 25px;
+    padding-left: 100px;
+    width: 700px;
+}
+
+#old_1_ul li {
+    line-height: 40px;
+}
+
+#old_1_box img {
+    width: 700px;
+}
+
+/*          BOX 2          */
+
+#old_2_box {
+    height: 500px;
+}
+
+#old_2_box img {
+    padding-top: 30px;
+    width: 700px;
+}
+
+/*          BOX 3          */
+
+#old_3_box {
+    height: 420px;
+}
+
+#old_3_ul {
+    text-align: left;
+    font-size: 25px;
+    padding-left: 100px;
+    width: 700px;
+}
+
+#old_3_ul li {
+    line-height: 40px;
+}
+
+/*          BOX 4          */
+
+#old_4_box {
+    height: 620px;
+}
+
+#old_4_content {
+    text-align: left;
+    font-size: 25px;
+    line-height: 40px;
+    padding-left: 100px;
+    width: 700px;
+}
+
+#old_4_box img {
+    padding-top: 30px;
+    width: 700px;
+}
+
+/*          BOX 5          */
+
+#old_5_box {
+    height: 250px;
+}
+
+#old_5_ul {
+    text-align: left;
+    font-size: 25px;
+    padding-left: 100px;
+    width: 700px;
+}
+
+#old_5_ul li {
+    line-height: 40px;
+}

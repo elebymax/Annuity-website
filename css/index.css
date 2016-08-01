@@ -1,0 +1,391 @@
+body {
+    margin: 0;
+    font-family: "Microsoft JhengHei";
+}
+
+.elm {
+    /*Firefox*/
+-moz-calc(expression);
+    /*chrome safari*/
+-webkit-calc(expression);
+    /*Standard */
+calc();
+}
+
+/* DIV HEADER*/
+
+#div_header {
+    width: 100%;
+    background-color: steelblue;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+
+    #head_title {
+        height: 100px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 40px;
+        display: block;
+    }
+
+    #head_logo {
+        width: 350px;
+    }
+
+    #head_img img{
+        width: 320px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1270px) {
+
+    #head_title {
+        height: 150px;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: block;
+    }
+
+    #head_logo {
+        width: 580px;
+    }
+
+    #head_img img{
+        width: 500px;
+    }
+}
+
+@media (min-width: 1271px) {
+
+    #head_title {
+        height: 200px;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: block;
+    }
+
+    #head_logo {
+        width: 700px;
+    }
+
+    #head_img img{
+        width: 620px;
+    }
+}
+
+#head_introduce {
+    padding-top: 30px;
+    color: white;
+    font-size: 25px;
+}
+
+@media (max-width: 768px) {
+    #head_btn_div {
+        padding-top: 50px;
+        padding-left: calc(50% - 140px);
+        width: 280px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 769px) {
+    #head_btn_div {
+        padding-top: 50px;
+        text-align: center;
+    }
+}
+
+.head_btn{
+    display: inline;
+    letter-spacing: 70px;
+}
+
+@media (max-width: 768px) {
+    .head_btn img {
+        cursor: pointer;
+        margin-bottom: 20px;
+        width: 100px;
+    }
+}
+
+@media (min-width: 769px) {
+    .head_btn img {
+        cursor: pointer;
+        width: 100px;
+    }
+}
+
+/* DIV INTRODUCE*/
+
+#div_introduce{
+    height: 50%;
+    background-color: white;
+    padding-top: 80px;
+    padding-bottom: 110px;
+}
+
+#introduce_title {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #introduce_contain {
+        padding-top: 20px;
+        font-size: 25px;
+        text-align: left;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+@media (min-width: 769px) {
+    #introduce_contain {
+        padding-top: 20px;
+        font-size: 25px;
+        text-align: center;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+/* DIV PAY */
+
+#div_pay {
+    background-color: #3BA2AF;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    width: 100%;
+    text-align: center;
+}
+
+#pay_title {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    #pay_content {
+        text-align: left;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+@media (min-width: 769px) {
+    #pay_content {
+        text-align: center;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+#pay_content p {
+    color: white;
+    font-size: 25px;
+    margin: 0 0 5px 0;
+}
+
+@media(max-width: 1270px) {
+    #pay_option_div {
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media (min-width: 1271px) {
+    #pay_option_div {
+        text-align: center;
+    }
+}
+
+.pay_option {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+@media (max-width: 768px) {
+    .pay_option img {
+        padding-top: 40px;
+        width: 180px;
+    }
+}
+
+@media (min-width: 769px) {
+    .pay_option img {
+        padding-top: 40px;
+    }
+}
+/* DIV QUALIFY */
+
+#div_qualify {
+    background-color: #EDEDED;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+#qualify_img {
+    padding-left: 10%;
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #qualify_img img {
+        width: 250px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1270px) {
+    #qualify_img img {
+        width: 330px;
+    }
+}
+
+@media (min-width: 1271px) {
+    #qualify_img img {
+        width: 380px;
+    }
+}
+
+#qualify_explain {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    padding-right: 10%;
+}
+
+#qualify_explain li{
+    text-align: left;
+}
+
+.qualify_content {
+    padding-left: 30px;
+    font-size: 25px;
+}
+
+#qualify_condition {
+    padding-left: 80px;
+}
+
+#qualify_condition img {
+    height: 110px;
+}
+
+#qualify_btn {
+    padding-top: 30px;
+    padding-left: 250px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #qualify_btn {
+        padding-top: 30px;
+        padding-left: 15%;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 769px) {
+    #qualify_btn {
+        padding-top: 30px;
+        padding-left: 250px;
+        cursor: pointer;
+    }
+}
+
+/* DIV CALCULATE*/
+
+#div_calculate{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    min-width: 100%;
+    background-color: #54C3C4;
+    text-align: center;
+}
+
+#calculate_title {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+#calculate_content {
+    color: white;
+    font-size: 25px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#calculate_btn_div {
+    padding-top: 70px;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+
+.calculate_btn{
+    display: inline;
+    cursor: pointer;
+    letter-spacing: 50px;
+}
+
+.calculate_btn img {
+    height: 50px;
+}
+
+/* DIV FOOTER*/
+
+#div_footer{
+    width: 100%;
+    height: 100%;
+    background-color: #7A7B7C;
+    padding-top: 70px;
+    padding-bottom: 75px;
+    text-align: center;
+
+}
+
+#footer_title {
+    color: white;
+    font-size: 25px;
+    padding: 10px 5% 10px 5%;
+}
+
+#footer_img {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #footer_img img {
+        width: 300px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1270px) {
+    #footer_img img {
+        width: 400px;
+    }
+}
+
+@media (min-width: 1271px) {
+    #footer_img img {
+        width: 500px;
+    }
+}
+
+#div_footer p {
+    color: black;
+    font-size: 15px;
+}

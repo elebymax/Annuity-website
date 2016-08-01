@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:vspace="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>年金報好哩哉</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <!--[if (lt IE 9) & (!IEMobile)]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <link rel=stylesheet type="text/css" href="css/index.css">
+    <script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+</head>
+<body>
+
+    <div id="div_header">
+        <div id="head_title">
+            <img src="res/image/logo_1.png" id="head_logo">
+        </div>
+        <div id="head_img">
+            <img src="res/image/money.png">
+        </div>
+        <div id="head_introduce">
+            <p style="margin: 0 auto 5px auto;">覺得國民年間很複雜很難懂？</p>
+            <p style="margin: 0 auto 5px auto;">快使用年金報好哩災</p>
+            <p style="margin: 0 auto 5px auto;">馬上變成年金達人</p>
+        </div>
+        <div id="head_btn_div">
+            <div class="head_btn" onclick="goDiv('div_introduce');">
+                <img src="res/image/title_introduce.png" >
+            </div>
+            <div class="head_btn" onclick="goDiv('div_pay');">
+                <img src="res/image/title_pay.png" >
+            </div>
+            <div class="head_btn" onclick="goDiv('div_qualify');">
+                <img src="res/image/title_qualify.png" >
+            </div>
+            <div class="head_btn" onclick="goDiv('div_calculate');">
+                <img src="res/image/title_calculate.png" >
+            </div>
+        </div>
+    </div>
+
+    <div id="div_introduce">
+        <div id="introduce_title">
+            <h1>什麼是國民年金?</h1>
+            <div id="introduce_contain">
+                <p style="margin: 0 auto 5px auto;">國民年金是一種由政府提供的社會保險，提供未能獲得適足保障的國民基本經濟安全。</p>
+                <p style="margin: 0 auto 5px auto;">並且因應現今社會已經進入高齡、少子化，將津貼制度轉型為國民年金制度，</p>
+                <p style="margin: 0 auto 5px auto;">能達到世代互助效果，並兼顧人民需求與政府資源配置。</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="div_pay">
+        <div>
+            <div id="pay_title"><h1>給付項目</h1></div>
+            <div id="pay_content">
+                <p>國民年金提供了四種給付項目，來應對人民生活中的需要。</p>
+                <p>請點擊下方項目按鈕，了解給付的條件。</p>
+            </div>
+            <div id="pay_option_div">
+                <ul class="pay_option">
+                    <li><img src="./res/image/disability.png"></li>
+                    <li onclick="goPay(0)"><img style="cursor: pointer;" src="res/image/button_disability.png"></li>
+                </ul>
+                <ul class="pay_option">
+                    <li><img src="./res/image/birth.png"></li>
+                    <li onclick="goPay(1)"><img style="cursor: pointer;" src="res/image/button_birth.png"></li>
+                </ul>
+                <ul class="pay_option">
+                    <li><img src="./res/image/old.png"></li>
+                    <li onclick="goPay(2)"><img style="cursor: pointer;" src="res/image/button_old.png"></li>
+                </ul>
+                <ul class="pay_option">
+                    <li><img src="./res/image/death.png"></li>
+                    <li onclick="goPay(3)"><img style="cursor: pointer;" src="res/image/button_death.png"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="div_qualify">
+        <div id="qualify_box">
+            <ul id="qualify_img"><img src="res/image/qualify.png"></ul>
+            <ul id="qualify_explain">
+                <li id="qualify_title"><h1>納保資格</h1></li>
+                <li class="qualify_content">*年滿25歲、未滿65歲</li>
+                <li class="qualify_content">*國內設有戶籍</li>
+                <li class="qualify_content">*未參加軍、公教、勞、農保</li>
+                <li class="qualify_content">*未領取</li>
+                <li id="qualify_condition"><img src="res/image/condition.png"></li>
+                <li class="qualify_content">未領老年給付前均適用</li>
+                <li id="qualify_btn">
+                    <img onclick="document.location.href='qualify.html';" src="res/image/button_more.png">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="div_calculate">
+        <div id="calculate_img"><img src="res/image/calculator.png"></div>
+        <div id="calculate_title"><h1>試算</h1></div>
+        <div id="calculate_content">選擇給付項目，就可以馬上做國民年金給付的試算喔！</div>
+        <div id="calculate_btn_div">
+            <div class="calculate_btn">
+                <a target="_blank" href="http://www.bli.gov.tw/cal/Disability.asp"><img src="res/image/button_disability.png"></a>
+            </div>
+            <div class="calculate_btn">
+                <a target="_blank" href="http://www.bli.gov.tw/cal/fee4.aspx"><img src="res/image/button_birth.png"></a>
+            </div>
+            <div class="calculate_btn">
+                <a target="_blank" href="http://www.bli.gov.tw/cal/oldPay2.asp"><img src="res/image/button_old.png"></a>
+            </div>
+            <div class="calculate_btn">
+                <a target="_blank" href="http://www.bli.gov.tw/cal/Death.asp"><img src="res/image/button_funeral.png"></a>
+            </div>
+            <div class="calculate_btn">
+                <a target="_blank" href="http://www.bli.gov.tw/cal/Survivor.asp"><img src="res/image/button_will.png"></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="div_footer">
+        <div id="footer_title">本網站資訊由勞動部勞工保險局提供</div>
+        <div id="footer_img"><a target="_blank" href="http://www.bli.gov.tw/sub.aspx?a=DUbMXxAoFv4%3D"><img src="res/image/logo_2.png"></a></div>
+        <p>Icon made by Freepik from <a target="_blank" href="http://www.flaticon.com/">www.flaticon.com</a></p>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

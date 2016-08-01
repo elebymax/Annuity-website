@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel=stylesheet type="text/css" href="css/question_old.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+</head>
+<body onload="frameResize();">
+    <div id="div_question">
+
+        <div class="quest_option">
+            <div class="option_bar" onclick="change('#btn_old_1')">
+                <div class="option_bar_box">
+                    <img class="option_btn_add" id="btn_old_1" src="res/image/add.png">
+                    <div class="option_title_div">
+                        <h2 class="option_title">老年給付請領資格</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="option_box" id="old_1_box">
+                <h1 class="box_title">請領資格</h1>
+                <hr size="4" width="80%" color="#4DD0F9">
+                <ul id="old_1_ul">
+                    <li>繳納國保保費，有國保年資。</li>
+                    <li>年滿65歲。</li>
+                </ul>
+                <img src="res/image/old/old_formula.png">
+            </div>
+        </div>
+
+        <div class="quest_option">
+            <div class="option_bar" onclick="change('#btn_old_2')">
+                <div class="option_bar_box">
+                    <img class="option_btn_add" id="btn_old_2" src="res/image/add.png">
+                    <div class="option_title_div">
+                        <h2 class="option_title">老年年金給付金額</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="option_box" id="old_2_box">
+                <h1 class="box_title">老年年金給付金額</h1>
+                <hr size="4" width="80%" color="#4DD0F9">
+                <img src="res/image/old/old_compare.png">
+            </div>
+        </div>
+
+        <div class="quest_option">
+            <div class="option_bar" onclick="change('#btn_old_3')">
+                <div class="option_bar_box">
+                    <img class="option_btn_add" id="btn_old_3" src="res/image/add.png">
+                    <div class="option_title_div">
+                        <h2 class="option_title">不得擇優情形-1</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="option_box" id="old_3_box">
+                <h1 class="box_title">不得擇優情形-1</h1>
+                <hr size="4" width="80%" color="#4DD0F9">
+                <ul id="old_3_ul">
+                    <li>有欠費致不計入保險年資情事。</li>
+                    <li>64-65歲有保險費欠繳情形，經通知限期繳納，逾期始為繳納者<div class="letter_blue">(前3個月採B式)。</div></li>
+                    <li>領取社會福利津貼。</li>
+                    <li>國保施行15年後領取相關社會保險老年給付。</li>
+                    <li>領取勞保老年年金給付、公保養老年金給付。</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="quest_option">
+            <div class="option_bar" onclick="change('#btn_old_4')">
+                <div class="option_bar_box">
+                    <img class="option_btn_add" id="btn_old_4" src="res/image/add.png">
+                    <div class="option_title_div">
+                        <h2 class="option_title">不得擇優情形-2</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="option_box" id="old_4_box">
+                <h1 class="box_title">不得擇優情形-2</h1>
+                <hr size="4" width="80%" color="#4DD0F9">
+                <div id="old_4_content"><div class="letter_blue">領過相關社會保險老年給付者</div></br>(勞保老年給付、軍保退伍給付、公教保養老給付)</div>
+                <img src="res/image/old/old_case2.png">
+            </div>
+        </div>
+
+        <div class="quest_option">
+            <div class="option_bar" onclick="change('#btn_old_5')">
+                <div class="option_bar_box">
+                    <img class="option_btn_add" id="btn_old_5" src="res/image/add.png">
+                    <div class="option_title_div">
+                        <h2 class="option_title">可與勞保老年年金合併請領</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="option_box" id="old_5_box">
+                <h1 class="box_title">可與勞保老年年金合併請領</h1>
+                <hr size="4" width="80%" color="#4DD0F9">
+                <ul id="old_5_ul">
+                    <li>被保險人年滿65歲時，如同時符合勞保、國保的老年年金請領資格，可以同時向勞保局申請2種老年年金。</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/question.js"></script>
+    <script src="js/optionBox.js"></script>
+</body>
+</html>

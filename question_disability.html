@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>身心障礙年金</title>
+    <link rel=stylesheet type="text/css" href="css/question_disability.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+</head>
+<body onload="frameResize();">
+    <div id="div_question">
+
+        <div class="quest_option">
+            <div class="option_bar" onclick="change('#btn_disability_1')">
+                <div class="option_bar_box">
+                    <img class="option_btn_add" id="btn_disability_1" src="res/image/add.png">
+                    <div class="option_title_div">
+                        <h2 class="option_title">請領資格</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="option_box" id="disability_1_box">
+                <h1 class="box_title">請領資格</h1>
+                <hr size="4" width="80%" color="#4DD0F9">
+                <ul id="disability_1_ul">
+                    <li>被保險人於<div class="letter_red">國保加保期間</div>遭受傷害或罹患疾病。</li>
+                    <li>領有<div class="letter_red">重度</div>以上身心障礙手冊/證明(非重大傷病卡)。</li>
+                    <li>經身心障礙鑑定醫療機構評估為<div class="letter_red">無工作能力。</div></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="quest_option">
+            <div class="option_bar" onclick="change('#btn_disability_2')">
+                <div class="option_bar_box">
+                    <img class="option_btn_add" id="btn_disability_2" src="res/image/add.png">
+                    <div class="option_title_div">
+                        <h2 class="option_title">身心障礙給付金額</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="option_box" id="disability_2_box">
+                <h1 class="box_title">身心障礙給付金額</h1>
+                <hr size="4" width="80%" color="#4DD0F9">
+                <img src="res/image/disability/disability_formula.png">
+                <div id="disability_2_content">※如無欠費及領取社會福利津貼情形，發給基本保障4,872元(原本4,700元，<div class="letter_red">自105年1月1日</div>起調高為<div class="letter_red">4,872元</div>)。</br>※領取期間繼續參加國保，保費政府全額補助，65歲起擇優領取老年年金。</div>
+                <h1 class="box_title">無基本保障4,872元情形</h1>
+                <hr size="4" width="80%" color="#4DD0F9">
+                <ul id="disability_2_ul">
+                    <li>有欠費致不計入保險年資情事</li>
+                    <li>領取社會福利津貼</li>
+                    <li>保險事故前1年有保險費欠繳情形，經通知限期繳納而逾期繳納<div class="letter_blue">(前3個月的身障年金無基本保障)</div></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="quest_option">
+            <div class="option_bar" onclick="change('#btn_disability_3')">
+                <div class="option_bar_box">
+                    <img class="option_btn_add" id="btn_disability_3" src="res/image/add.png">
+                    <div class="option_title_div">
+                        <h2 class="option_title">可合併請領勞保失能年金</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="option_box" id="disability_3_box">
+                <h1 class="box_title">請領資格</h1>
+                <hr size="4" width="80%" color="#4DD0F9">
+                <div id="disability_3_content"><div class="letter_blue" style="font-size: 50px;">例</div>：陳太太目前參加國保(年資5年)，最近發生意外，取得重度身心障礙證明，且經評估無工作能力，申請國保的身心障礙年金。因陳太太同時還有勞保年資10年，平均月投保薪資3萬2,000元，她選擇合併請領國、勞保的身心障礙(失能)年金，勞保局即依國保、勞保的規定與年資，分別計算金額後合併發給。</div>
+                <img src="res/image/disability/disability_tutorial.png">
+            </div>
+        </div>
+
+    </div>
+    <script src="js/question.js"></script>
+    <script src="js/optionBox.js"></script>
+</body>
+</html>
